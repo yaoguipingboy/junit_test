@@ -3,6 +3,8 @@
 	<test name="Test">
 		<classes>
 			<class name="org.b3log.JunitTestCoverageTest" />
+			<class name="org.b3log.ComplexCalculationTest" />
+			<class name="org.b3log.SimpleCalculationTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
