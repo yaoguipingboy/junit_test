@@ -1,16 +1,16 @@
 package org.b3log;
 
-import org.b3log.SimpleCalculation;
-
-import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.Test;
+
+import org.b3log.SimpleCalculation;
 
 public class SimpleCalculationTest {
 
     SimpleCalculation sc = new SimpleCalculation();
     
     @Test
-    public void AddTest() {
+    public void Add() {
         
         int c = sc.Add(3, 5);    
         
@@ -18,7 +18,7 @@ public class SimpleCalculationTest {
     }
     
     @Test
-    public void SubtrationTest() {
+    public void Subtration() {
         
         int c = sc.Subtration(20, 5);    
         
