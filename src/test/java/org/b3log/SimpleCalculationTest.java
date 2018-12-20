@@ -13,15 +13,13 @@ public class SimpleCalculationTest {
     public void Add() {
         
         int c = sc.Add(3, 5);    
-        
-        assertEquals(8, c);        
+        Assert.assertEquals(c, 8);      
     }
     
     @Test
     public void Subtration() {
         
-        int c = sc.Subtration(20, 5);    
-        
-        assertEquals(15, c);        
+        int c = sc.Subtration(20, 5);     
+        Assert.assertEquals(c, 15);
     }
 }
