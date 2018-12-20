@@ -55,7 +55,7 @@
                 <configuration>
                    <skipTests>false</skipTests>
                     <suiteXmlFiles>
-                        <suiteXmlFile>test.xml</suiteXmlFile>
+                        <suiteXmlFile>TestNG.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
              </plugin>
