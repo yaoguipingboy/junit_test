@@ -13,6 +13,10 @@ public class JunitTestCoverageTest {
     public void testadd(){
         int b = CoverageTest.testadd(5, 20);
         Assert.assertEquals(b,50);
+        b = CoverageTest.testadd(10, 20);
+        Assert.assertEquals(b,30);
+        b = CoverageTest.testadd(30, 20);
+        Assert.assertEquals(b,100);
     }
 
 
