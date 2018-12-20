@@ -10,14 +10,12 @@ public class SimpleCalculationTest {
     
     @Test
     public void Add() {
-        
         int c = sc.Add(3, 5);    
         Assert.assertEquals(c, 8);      
     }
     
     @Test
     public void Subtration() {
-        
         int c = sc.Subtration(20, 5);     
         Assert.assertEquals(c, 15);
     }
