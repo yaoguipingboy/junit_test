@@ -2,7 +2,6 @@ package org.b3log;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 import org.b3log.SimpleCalculation;
 
 public class SimpleCalculationTest {
