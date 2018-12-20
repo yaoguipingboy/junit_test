@@ -54,6 +54,9 @@
                 <version>2.5</version>
                 <configuration>
                    <skipTests>false</skipTests>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>test.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
              </plugin>
             <plugin>
