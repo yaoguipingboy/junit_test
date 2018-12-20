@@ -14,15 +14,13 @@ public class ComplexCalculationTest {
     public void Division() {
         
         int c = cc.Division(100, 5);
-        
-        assertEquals(20, c);        
+        Assert.assertEquals(c, 20);      
     }
 
     @Test
     public void Multiply() {
         
         int c = cc.Multiply(100, 5);
-        
-        assertEquals(500, c);        
+        Assert.assertEquals(c, 500);
     }
 }
