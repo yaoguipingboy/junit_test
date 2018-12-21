@@ -12,10 +12,12 @@ import org.b3log.ComplexCalculation;
 public class Ngtestall {
 
     SimpleCalculation sc;
+    ComplexCalculation cc;
     
     @BeforeClass
     public void beforeClass() {
         sc = new SimpleCalculation();
+        cc = new ComplexCalculation();
         System.out.println("this is before class");
     }
 
@@ -48,13 +50,13 @@ public class Ngtestall {
     
     @Test
     public void Division() {
-        int c = sc.Division(100, 5);
+        int c = cc.Division(100, 5);
         Assert.assertEquals(c, 20);      
     }
 
     @Test
     public void Multiply() {
-        int c = sc.Multiply(100, 5);
+        int c = cc.Multiply(100, 5);
         Assert.assertEquals(c, 500);
     }
     
