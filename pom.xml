@@ -6,7 +6,20 @@
     <groupId>fc</groupId>
     <artifactId>test_junit</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+	
+	<distributionManagement>
+	    <repository>
+		<id>arti-releases</id>
+		<name>Local arti Repository</name>
+		<url>http://119.3.75.106:8081/artifactory/deployment_release_repo_local_generic_01</url>
+	    </repository>
+	    <snapshotRepository>
+		<id>arti-snapshots</id>
+		<name>Local arti Repository</name>
+		<url>http://119.3.75.106:8081/artifactory/deployment_snapshot_repo_local_generic_01</url>
+	    </snapshotRepository>
+	</distributionManagement>
+	
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
