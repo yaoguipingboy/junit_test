@@ -11,23 +11,24 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>6.9.8</version>
             <scope>test</scope>
         </dependency>
-    
+  
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>6.11</version>
+	    <scope>test</scope>
+	</dependency>
         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
         <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.7.8</version>
         </dependency>
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-		    <groupId>org.testng</groupId>
-		    <artifactId>testng</artifactId>
-		    <version>6.11</version>
-		    <scope>test</scope>
-		</dependency>
+
     </dependencies>
 
     <build>
@@ -51,13 +52,31 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.5</version>
+                <version>3.0.0-M2</version>
                 <configuration>
-                   <skipTests>false</skipTests>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>TestNG.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+			<properties>
+				<property>
+					<name>junit</name>
+					<value>false</value>
+				</property>
+			</properties>
+			<skipTests>false</skipTests>
+			<suiteXmlFiles>
+				<suiteXmlFile>TestNG.xml</suiteXmlFile>
+			</suiteXmlFiles>
                 </configuration>
+		<dependencies>
+		  <dependency>
+		    <groupId>org.apache.maven.surefire</groupId>
+		    <artifactId>surefire-junit47</artifactId>
+		    <version>3.0.0-M2</version>
+		  </dependency>
+		  <dependency>
+		    <groupId>org.apache.maven.surefire</groupId>
+		    <artifactId>surefire-testng</artifactId>
+		    <version>3.0.0-M2</version>
+		  </dependency>
+		</dependencies>
              </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
