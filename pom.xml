@@ -57,7 +57,7 @@
 			<properties>
 				<property>
 					<name>junit</name>
-					<value>false</value>
+					<value>true</value>
 				</property>
 			</properties>
 			<suiteXmlFiles>
