@@ -60,6 +60,9 @@
 					<value>false</value>
 				</property>
 			</properties>
+			<suiteXmlFiles>
+				<suiteXmlFile>TestNG.xml</suiteXmlFile>
+			</suiteXmlFiles>
                 </configuration>
              </plugin>
             <plugin>
