@@ -60,23 +60,7 @@
 					<value>false</value>
 				</property>
 			</properties>
-			<skipTests>false</skipTests>
-			<suiteXmlFiles>
-				<suiteXmlFile>TestNG.xml</suiteXmlFile>
-			</suiteXmlFiles>
                 </configuration>
-		<dependencies>
-		  <dependency>
-		    <groupId>org.apache.maven.surefire</groupId>
-		    <artifactId>surefire-junit47</artifactId>
-		    <version>3.0.0-M2</version>
-		  </dependency>
-		  <dependency>
-		    <groupId>org.apache.maven.surefire</groupId>
-		    <artifactId>surefire-testng</artifactId>
-		    <version>3.0.0-M2</version>
-		  </dependency>
-		</dependencies>
              </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
