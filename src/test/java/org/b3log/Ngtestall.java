@@ -39,7 +39,7 @@ public class Ngtestall {
     @Test
     public void Add() {
         int c = sc.Add(3, 5);    
-        Assert.assertEquals(c, 8);      
+        Assert.assertEquals(c, 80);      
     }
     
     @Test
@@ -51,7 +51,7 @@ public class Ngtestall {
     @Test
     public void Division() {
         int c = cc.Division(100, 5);
-        Assert.assertEquals(c, 20);      
+        Assert.assertEquals(c, 200);      
     }
 
     @Test
