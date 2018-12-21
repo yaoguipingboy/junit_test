@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="false">
 	<test name="Test">
 		<packages>
-			<package name="org.b3log.*/>
+			<package name="org.b3log.*" />
 		</packages>
 	</test>
 </suite>
